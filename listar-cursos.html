@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link href="assets/css/home.css" rel="stylesheet">
+    <link href="assets/jquery.toast.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+
+    <title>Cursos</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Mr. Chef</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cursos.html">Cursos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <button class="btn btn-outline-success" type="submit">Sair</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+</section>
+<h2 class="pb-2 border-bottom">Outros cursos</h2>
+</div>
+<div class="container">
+<div class="row">
+    <div class="col-12">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Carga Horária</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabUsuario">
+            </tbody>
+        </table>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addUsuario">
+            <i class="bi bi-plus"></i> Adicionar
+        </button>
+    </div>
+</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="addUsuario" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body" style="margin-top: 50px;">
+            <form id="frmUsuario">
+                <input type="hidden" name="id" id="id">
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="nome" name="nome">
+                </div>
+                <div class="mb-3">
+                    <label for="descricao" class="form-label">Descrição</label>
+                    <input type="text" class="form-control" id="descricao" placeholder="descricao"
+                        name="descricao">
+                </div>
+                <div class="mb-3">
+                    <label for="horas" class="form-label">Carga Horária</label>
+                    <input type="number" class="form-control" id="horas" name="horas">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            <button id="btnSalvar" data-loading-text="Salvando..." type="button"
+                class="btn btn-primary">Salvar</button>
+        </div>
+    </div>
+    <div class="modal-header">
+        <h5 class="modal-title" id="tituloModal">Adicionar Usuário</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="assets/jquery.toast.min.js"></script>
+<script src="listar-cursos.js"></script>
+
+</body>
+
+</html>

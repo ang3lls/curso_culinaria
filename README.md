@@ -27,3 +27,6 @@ Cadastro Pessoa
 
 Cadastro Curso
 ![cadastroCurso1.png](/printTelas/cadastroCurso1.png)
+
+Atividade 06
+![atv06.png](/printTelas/atv06.png)
